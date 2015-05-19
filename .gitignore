@@ -1,1 +1,2 @@
-*.pyc
+./src/chapter1/*.pyc
+./src/chapter2/*.pyc
