@@ -199,3 +199,43 @@ else:
 虽然这样的代码没有任何错误，但我们在编码的时候应该注意代码的整洁和美观，尽量采用相同的缩进方式。不要混合使用制表符和空格来缩进，因为这在跨越不同的平台的时候，无法正常工作。我 强烈建议 你在每个缩进层次使用 单个制表符 或 两个或四个空格 。选择这三种缩进风格之一。更加重要的是，选择一种风格，然后一贯地使用它，即 只 使用这一种风格。 
 <br />
 #### 执行方式
+首先介绍一下 Python 的两种编程模式，即交互式编程和脚本式编程。交互式编程一般用户初期学习、简单测试和查看帮助，一般采用的编程方式都是脚本式编程。
+
+* **交互式编程**
+所谓交互式编程就是采用 Python 的交互式解释器进行一些简单的编程。在实际应用中我们只采用交互式解释器做一些简单的验证测试，或者用于初学者的学习。当然采用交互式解释器来查看帮助是很有用的，它就类似于 Linux 的 manpage 一样强大。在 Linux 下启动 Python 解释器，只要在终端输入 python 即可，Python 解释器有很多，这里不做详细描述。我之所以要提交互式解释器就是为了介绍它的 **help** 功能，即查看帮助。这是很有用的，这里有所有内置模块、方法等的帮助手册，你应该尽量的使用它。进入交互式解释其后，要退出可以输入exit() 或者 quit()。下面是简单的使用例子：
+```python
+Python 2.7.9 (default, Apr  2 2015, 15:34:55) 
+[GCC 4.9.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "hello world!"
+hello world!
+>>> help("sys")
+
+>>> help()
+
+Welcome to Python 2.7!  This is the online help utility.
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at http://docs.python.org/2.7/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, or topics, type "modules",
+"keywords", or "topics".  Each module also comes with a one-line summary
+of what it does; to list the modules whose summaries contain a given word
+such as "spam", type "modules spam".
+
+help> sys
+
+help> q
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> quit()
+```
+
+* **脚本式编程**
